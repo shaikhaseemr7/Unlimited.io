@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Science 11th & 12th Lab - Team Aseemasian</title>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: #f1f5f9;
+    scroll-behavior: smooth;
+  }
+  header {
+    background: rgba(15, 23, 42, 0.8);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(8px);
+    z-index: 100;
+  }
+  header h1 {
+    color: #38bdf8;
+    font-size: 1.5rem;
+  }
+  nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #f8fafc;
+    transition: 0.3s;
+  }
+  nav a:hover {
+    color: #38bdf8;
+  }
+
+  section {
+    padding: 100px 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  #hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    min-height: 60vh;
+  }
+  #hero h2 {
+    font-size: 2.5rem;
+    color: #38bdf8;
+    margin-bottom: 10px;
+  }
+  #hero p {
+    font-size: 1.1rem;
+    color: #cbd5e1;
+    max-width: 600px;
+  }
+
+  #labs {
+    background: #1e293b;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(56, 189, 248, 0.1);
+    padding: 40px;
+  }
+  #labs h3 {
+    color: #38bdf8;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    border-bottom: 2px solid #334155;
+    padding-bottom: 10px;
+  }
+  .subject-category {
+    margin-bottom: 30px;
+  }
+  .subject-category h4 {
+    color: #0ea5e9;
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+  }
+  .project {
+    background: #334155;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    padding: 20px;
+    border-left: 4px solid #38bdf8;
+  }
+  .project h5 {
+    margin-bottom: 5px;
+    color: #f1f5f9;
+    font-size: 1.1rem;
+  }
+  .project p {
+    color: #cbd5e1;
+    font-size: 0.95rem;
+  }
+
+  footer {
+    text-align: center;
+    padding: 30px;
+    color: #94a3b8;
+    font-size: 0.9rem;
+    background: #0f172a;
+    border-top: 1px solid #1e293b;
+  }
+
+  button {
+    background: #38bdf8;
+    border: none;
+    color: #0f172a;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 20px;
+    transition: 0.3s;
+  }
+  button:hover {
+    background: #0ea5e9;
+    color: white;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Team Aseemasian</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="#physics">Physics</a>
+    <a href="#chemistry">Chemistry</a>
+    <a href="#biology">Biology</a>
+  </nav>
+</header>
+
+<section id="hero">
+  <h2>Science 11th & 12th Lab</h2>
+  <p>Interactive resources and experimental guides tailored for 11th and 12th-grade students in Physics, Chemistry, and Biology.</p>
+  <button onclick="document.getElementById('physics').scrollIntoView({behavior:'smooth'})">Explore Labs</button>
+</section>
+
+<section id="labs">
+  <div id="physics" class="subject-category">
+    <h3>Physics</h3>
+    <div class="project">
+      <h5>⚡ Ohm's Law and Resistance</h5>
+      <p>Investigate the relationship between voltage, current, and resistance using circuit boards and multimeters.</p>
+    </div>
+    <div class="project">
+      <h5>🔭 Optics: Focal Length of Lenses</h5>
+      <p>Determine the focal length of convex and concave lenses using an optical bench.</p>
+    </div>
+    <div class="project">
+      <h5>〰️ Simple Pendulum</h5>
+      <p>Study the time period of a simple pendulum and calculate the acceleration due to gravity (g).</p>
+    </div>
+  </div>
+
+  <div id="chemistry" class="subject-category">
+    <h3>Chemistry</h3>
+    <div class="project">
+      <h5>⚗️ Acid-Base Titration</h5>
+      <p>Determine the concentration of an unknown acid or base solution using a standard solution and indicators.</p>
+    </div>
+    <div class="project">
+      <h5>🧂 Salt Analysis</h5>
+      <p>Qualitative analysis to identify the cations and anions present in an inorganic salt mixture.</p>
+    </div>
+    <div class="project">
+      <h5>🌡️ Enthalpy of Dissolution</h5>
+      <p>Measure the heat changes during the dissolution of salts like potassium nitrate or copper sulfate.</p>
+    </div>
+  </div>
+
+  <div id="biology" class="subject-category">
+    <h3>Biology</h3>
+    <div class="project">
+      <h5>🔬 Onion Root Tip Mitosis</h5>
+      <p>Prepare and observe slides of onion root tips to identify different stages of cell division (mitosis).</p>
+    </div>
+    <div class="project">
+      <h5>🌱 Plasmolysis in Epidermal Peels</h5>
+      <p>Observe the effects of hypertonic solutions on plant cells using Rhoeo or Tradescantia leaves.</p>
+    </div>
+    <div class="project">
+      <h5>🧬 DNA Extraction</h5>
+      <p>Extract and visualize crude DNA from plant materials like bananas or strawberries using simple household reagents.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2025 Team Aseemasian — All Rights Reserved
+</footer>
+
+</body>
+</html>
